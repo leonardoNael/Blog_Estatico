@@ -1,0 +1,118 @@
+function imganterior(){
+    /*for(var inc = 4; inc < 0; inc--)
+    {
+        if(anterior == inc)
+        {
+            document.getElementById("imgopc").src = imgs[inc];
+        }
+    }*/
+
+    while(anterior > (anteriorP-1)){
+        if(anterior == 4){
+            document.getElementById("imgopc").src = imgs[4];
+        }
+        if(anterior == 3){
+            document.getElementById("imgopc").src = imgs[3];
+        }
+        if(anterior == 2){
+            document.getElementById("imgopc").src = imgs[2];
+        }
+        if(anterior == 1){
+            document.getElementById("imgopc").src = imgs[1];
+        }
+        if(anterior == 0){
+            document.getElementById("imgopc").src = imgs[0];
+        }
+        /*segunda parte*/
+        if(proxima == 0){
+            document.getElementById("imgopc").src = imgs[4];
+            proxima--;
+        }
+        if(proxima == 1){
+            document.getElementById("imgopc").src = imgs[3];
+            proxima--;
+        }
+        if(proxima == 2){
+            document.getElementById("imgopc").src = imgs[2];
+            proxima--;
+        }
+        if(proxima == 3){
+            document.getElementById("imgopc").src = imgs[1];
+            proxima--;
+        }
+        if(proxima == 4){
+            document.getElementById("imgopc").src = imgs[0];
+            proxima--;
+        }
+        anterior--;
+    }
+    
+
+    anteriorP--;
+    if (anteriorP < 0){
+        anteriorP = 4;
+        anterior = 4;
+    }
+    proximaP++;
+    if (proximaP > 4){
+        proximaP = 0;
+        proxima = 0;
+    }
+
+}
+
+function proximg(){
+    while(proxima < (proximaP+1)){
+        if(proxima == 0){
+            document.getElementById("imgopc").src = imgs[0];
+        }
+        if(proxima == 1){
+            document.getElementById("imgopc").src = imgs[1];
+        }
+        if(proxima == 2){
+            document.getElementById("imgopc").src = imgs[2];
+        }
+        if(proxima == 3){
+            document.getElementById("imgopc").src = imgs[3];
+        }
+        if(proxima == 4){
+            document.getElementById("imgopc").src = imgs[4];
+        }
+
+        /*segunda parta*/
+        if(anterior == 4){
+            document.getElementById("imgopc").src = imgs[0];
+            anterior++;
+        }
+        if(anterior == 3){
+            document.getElementById("imgopc").src = imgs[1];
+            anterior++;
+        }
+        if(anterior == 2){
+            document.getElementById("imgopc").src = imgs[2];
+            anterior++;
+        }
+        if(anterior == 1){
+            document.getElementById("imgopc").src = imgs[3];
+            anterior++;
+        }
+        if(anterior == 0){
+            document.getElementById("imgopc").src = imgs[4];
+            anterior++;
+        }
+        proxima++;
+    }
+
+    anteriorP--;
+    if (anteriorP < 0){
+        anteriorP = 4;
+        anterior = 4;
+    }
+
+    proximaP++;
+    if (proximaP > 4){
+        proximaP = 0;
+        proxima = 0;
+    }
+    document.getElementById("setaesquerda").style.visibility = "visible";
+}

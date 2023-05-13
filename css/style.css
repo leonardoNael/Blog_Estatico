@@ -1,0 +1,168 @@
+.navbar{
+    width: 100%;
+    background-color: #282828;
+}
+
+#active{
+    border: 1px #f0e68c solid;
+    font-size: larger;
+}
+
+.nav-item{
+    color: #f0e68c;
+    font-size: large;
+    border: 1px #282828 solid;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.nav-item:hover{
+    border: 1px #f0e68c solid;
+    color: #f0e68c;
+    background-color: #3f3f3f;
+    text-decoration: none;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.topo{
+    position: fixed;
+    right: 2.5%;
+    bottom: 7%;
+}
+
+.crsImg{
+    text-align: center;
+}
+
+#setaesquerda{
+    float: left;
+    padding-left: 47%;
+    visibility: hidden;
+}
+
+.setadireita{
+    float: right;
+    padding-right: 47%;
+}
+
+.direitos{
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    padding-bottom: 1.3%;
+    padding-top: 1%;
+    background-color: #dcdcdc;
+}
+
+.tabelaDisco{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    
+}
+
+.content{
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.images{
+    padding-top: 3%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+}
+
+#imgindex:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    }
+
+h2{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;  
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.videos{
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    padding-bottom: 3%;
+}
+
+.titulosVids{
+    text-align: center;
+    font-size: larger;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.tituloImg{
+    text-align: center;
+    font-size: larger;
+    font-style: oblique;
+    padding-top: 2%;
+    padding-bottom: 1%;
+}
+
+.pcomfoto{
+    justify-items: center;
+    display: flex;
+    float: left;
+
+    padding-left: 10%;
+    padding-right: 1%;
+}
+
+.pcomfoto1{
+    justify-items: center;
+    display: flex;
+    float: left;
+
+    padding-left: 10%;
+    padding-right: 1%;
+}
+
+.pcomfoto2{
+    justify-items: center;
+    display: flex;
+    float: right;
+    padding-left: 1%;
+    padding-right: 10%;
+}
+
+.videosyt{
+    align-items: center; 
+    justify-content: center; 
+    display: flex; 
+    flex-direction: row;
+}
